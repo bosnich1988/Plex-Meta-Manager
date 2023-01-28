@@ -1,0 +1,117 @@
+libraries:                       
+  Movies:                        
+    metadata_path:
+      - pmm: basic               
+      - pmm: imdb                
+    overlay_path:
+      - remove_overlays: true   
+      - pmm: ribbon              
+  TV Shows:
+    metadata_path:
+      - pmm: basic               
+      - pmm: imdb                
+    overlay_path:
+      - remove_overlays: true   
+      - pmm: ribbon              
+  Anime:
+    metadata_path:
+      - pmm: basic             
+      - pmm: anilist             
+playlist_files:
+  - pmm: playlist                
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  asset_depth: 0
+  create_asset_folders: false
+  prioritize_assets: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 1
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_filtered: false
+  show_options: false
+  show_missing: true
+  show_missing_assets: true
+  save_report: false
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_user: all
+  playlist_exclude_user:
+  playlist_report: false
+  verify_ssl: true
+  custom_repo:
+  check_nightly: false
+webhooks:                        
+  error:
+  version:
+  run_start:
+  run_end:
+  changes:
+plex:                            
+  url: http://192.168.1.10:32400
+  token: claim-DJuzsxBiUxpXuvLVNH81
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+tmdb:                            
+  apikey: 5d8e322f9edc4a1c4b3218233b4d6ce8
+  language: en
+tautulli:                        
+  url: http://192.168.1.10:8181
+  apikey: hvfq83uPdh71tqaYai4HlkF4e2c-S5S5
+radarr:                          
+  url: http://192.168.1.10:7878
+  token: 92347fc77ff24de98f583ce557f98906
+  add_missing: false
+  add_existing: false
+  root_folder_path: S:/Movies
+  monitor: true
+  availability: announced
+  quality_profile: HD-1080p
+  tag:
+  search: false
+  radarr_path:
+  plex_path:
+sonarr:                          
+  url: http://192.168.1.10:8989
+  token: 9253afbbc8a54286819789cbd22dc495
+  add_missing: false
+  add_existing: false
+  root_folder_path: "S:/TV Shows"
+  monitor: all
+  quality_profile: HD-1080p
+  language_profile: English
+  series_type: standard
+  season_folder: true
+  tag:
+  search: false
+  cutoff_search: false
+  sonarr_path:
+  plex_path:
+trakt:
+  client_id: 53421e196e8adad26b0481f5afc052cfca621d653c4062065ccbf6ec8cf43ec6
+  client_secret: 4afe69a500c656035521e9faaebac9e66f52d6c0194c12f15712e91f62ade23a
+  pin:
+  authorization:
+    access_token:
+    token_type:
+    expires_in:
+    refresh_token:
+    scope: public
+    created_at:
