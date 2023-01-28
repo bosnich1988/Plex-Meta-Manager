@@ -1,4 +1,4 @@
-## This file is a template remove the .template to use the file
+
 
 libraries:                       # This is called out once within the config.yml file
   Movies:                        # These are names of libraries in your Plex
@@ -67,39 +67,28 @@ settings:
   verify_ssl: true
   custom_repo:
   check_nightly: false
-webhooks:                        # Can be individually specified per library as well
+webhooks:                       
   error:
   version:
   run_start:
   run_end:
   changes:
-plex:                            # Can be individually specified per library as well; REQUIRED for the script to run
-  url: http://192.168.1.12:32400
-  token: ####################
+plex:                            
+  url: http://192.168.1.10:32400
+  token: claim-3_9aBaxDTXJ-QBEcLiRG
   timeout: 60
   clean_bundles: false
   empty_trash: false
   optimize: false
-tmdb:                            # REQUIRED for the script to run
-  apikey: ################################
+tmdb:                            
+  apikey: 5d8e322f9edc4a1c4b3218233b4d6ce8
   language: en
-tautulli:                        # Can be individually specified per library as well
-  url: http://192.168.1.12:8181
-  apikey: ################################
-omdb:
-  apikey: ########
-  cache_expiration: 60
-mdblist:
-  apikey: #########################
-  cache_expiration: 60
-notifiarr:
-  apikey: ####################################
-anidb:                           # Not required for AniDB builders unless you want mature content
-  username: ######
-  password: ######
-radarr:                          # Can be individually specified per library as well
-  url: http://192.168.1.12:7878
-  token: ################################
+tautulli:                        
+  url: http://192.168.1.10:8181
+  apikey: hvfq83uPdh71tqaYai4HlkF4e2c-S5S5
+radarr:                          
+  url: http://192.168.1.10:7878
+  token: 92347fc77ff24de98f583ce557f98906
   add_missing: false
   add_existing: false
   root_folder_path: S:/Movies
@@ -110,9 +99,9 @@ radarr:                          # Can be individually specified per library as 
   search: false
   radarr_path:
   plex_path:
-sonarr:                          # Can be individually specified per library as well
-  url: http://192.168.1.12:8989
-  token: ################################
+sonarr:                          
+  url: http://192.168.1.10:8989
+  token: 9253afbbc8a54286819789cbd22dc495
   add_missing: false
   add_existing: false
   root_folder_path: "S:/TV Shows"
@@ -127,8 +116,8 @@ sonarr:                          # Can be individually specified per library as 
   sonarr_path:
   plex_path:
 trakt:
-  client_id: ####################
-  client_secret: ####################
+  client_id: 53421e196e8adad26b0481f5afc052cfca621d653c4062065ccbf6ec8cf43ec6
+  client_secret: 4afe69a500c656035521e9faaebac9e66f52d6c0194c12f15712e91f62ade23a
   pin:
   authorization:
     # everything below is autofilled by the script
